@@ -10,20 +10,28 @@
     function HomeController ($scope, $state, $timeout, $http) {
         var vm = this;
 
+
+        $scope.content = TEMPLATE;
+        console.log("LOADED:"); console.log($scope.content);
+
         var reset = function(){
                     //loaded from template.js
                     $scope.content = TEMPLATE;
         }
-
-        reset();
-        
+     
         //entity name that is used in file - to be replaced
         var ENTITY_INIT_NAME = "ENTITY_NAME";
 
         $scope.entityName="";
         
         $scope.download = function(){
-           var filename = $scope.entityName+".java";
+            var filename;
+            if($scope.entityName===""){
+                filename="ENTITY_NAME.java";
+            }else{
+                filename = $scope.entityName+".java";
+            }
+           
            var text = $scope.content;
             // Set up the link
             var link = document.createElement("a");
