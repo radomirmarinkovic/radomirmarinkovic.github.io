@@ -401,7 +401,7 @@ header a:hover {
   border-color: #d11c1c;
 }
 header a:active, header a:focus {
-  color: #d11c1c;
+  color: #e85151;
   border-color: #d11c1c;
 }
 header nav {
