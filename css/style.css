@@ -192,7 +192,7 @@ body {
 .main-header {
   height: 100%;
   width: 100%;
-  min-height: 450px;
+  min-height: 100px;/*450*/
   color: #fff;
   text-align: center;
   background-color: #cf4646;
