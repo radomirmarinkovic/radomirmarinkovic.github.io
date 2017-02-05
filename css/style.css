@@ -193,9 +193,13 @@ body {
   height: 100%;
   width: 100%;
   min-height: 100px;/*450*/
+  /*MY TEXT COLOR*/
+  /*background: url("../img/bgimage.png");*/
   color: #fff;
   text-align: center;
-  background-color: #cf4646;
+  /*background-color: #000;*/
+  background-color: rgb(182, 25, 36);
+  /* MY BACKGROUD COLOR background-color: #cf4646; 323234*/
 }
 .main-header-content {
   position: absolute;
