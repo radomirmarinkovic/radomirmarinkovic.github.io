@@ -1,0 +1,70 @@
+<div class="container">
+        <div class="row">
+
+            <div class="col-md-4"> 
+            </div>
+
+            <div class="col-md-4"> 
+
+
+                <div class="jumbotron">                        
+                        <h3 align="center">{{tempPhrase.text}}</h3>
+                        <h1 align="center"><b>{{tempGenValue}}</b></h1>
+                </div>
+
+                <br>
+               <h3> Ticket Name </h3>
+               <input type="text" class="form-control" placeholder="enter here..." [(ngModel)]="ticket.name">
+
+                <h3> Priority </h3> 
+                <!--<b> {{selectedPriority.name}} </b>-->
+                <button *ngFor = "let item of ranges; let i = index" 
+                        type="button" class="btn btn-{{item.bootstrap}}" 
+                        (click)=priorityPicked(item)>
+                        {{ranges[i].name}}
+                </button>
+               
+
+                <br> <br> <br> <br>
+                <button (click)=addTicket() type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Add Ticket
+                </button>
+
+        
+                 <!--<h3> Points </h3>
+                <h1>{{value}} points</h1>-->
+
+                <br> <br> 
+                <!--TABLE-->
+                <div data-example-id="panel-without-body-with-table">
+                        <div class="panel panel-default">
+                                <!--<div class="panel-heading">Panel heading</div>-->
+                                <table class="table">
+                                <thead>
+                                        <tr>
+                                                <th>#</th>
+                                                <th>Ticket</th>
+                                                <th>Points</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr *ngFor = "let item of tickets; let i = index">        
+                                                <td>{{i+1}}.</td>
+                                                <td>{{item.name}}</td>
+                                                <td> <span class="badge"> {{item.points}} </span> </td>
+                                        </tr>
+                                </tbody>
+                                </table>
+                        </div>
+                </div>
+
+
+                
+            </div>
+
+            <div class="col-md-4"> 
+            </div>
+
+        </div>
+
+</div>
