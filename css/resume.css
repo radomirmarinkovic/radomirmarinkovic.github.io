@@ -250,3 +250,20 @@ a:hover, a:focus, a:active {
 img, figure {
     max-width: 100%;
 }
+
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("./../img/mr.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
