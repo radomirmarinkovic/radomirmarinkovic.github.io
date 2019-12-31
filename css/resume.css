@@ -251,6 +251,9 @@ img, figure {
     max-width: 100%;
 }
 
+.hello-text {
+  background-color:#00ffd0;
+}
 body, html {
   height: 100%;
 }
